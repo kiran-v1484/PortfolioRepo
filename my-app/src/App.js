@@ -1,21 +1,33 @@
-import React from 'react'
-import { Canvas } from '@react-three/fiber'
-import "./style.css"
-import { OrbitControls } from '@react-three/drei'
-import { MeshStandardMaterial } from 'three'
-import * as THREE from "three"
+import React from "react";
+import { Canvas } from "@react-three/fiber";
+import "./style.css";
+import { OrbitControls, useTexture } from "@react-three/drei";
+import { MeshStandardMaterial } from "three";
+import * as THREE from "three";
+import Cyl from "./Cyl";
+import { Bloom, EffectComposer, ToneMapping } from "@react-three/postprocessing";
+
 const App = () => {
-  return (
-   <Canvas>
-    <OrbitControls/>
-    <ambientLight/>
-    <mesh> 
-      <cylinderGeometry args ={[1, 1, 1, 30, 30, true]}/>
-      <meshStandardMaterial side={THREE.DoubleSide}/>
+  return (<>
+    <Canvas flat camera={{ fov: 35 }}>
+      {/* <OrbitControls /> */}
+      <ambientLight />
+      <Cyl />
+      <EffectComposer>
+        <Bloom
+          mipmapBlur
+          intensity={4.0}
+          luminanceThreshold={0}
+          luminanceSmoothing={0}
+        />
+        <ToneMapping adaptive/>
+      </EffectComposer>
+    </Canvas>
+    <div className="desc">
+      this is my portfolio
+    </div>
+    </>
+  );
+};
 
-    </mesh>
-   </Canvas>
-  )
-}
-
-export default App
+export default App;
