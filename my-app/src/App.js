@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Data } from "./EmployeData";
+import Home from "./components/Home";
+
 
 function App() {
   const [data, setData] = useState([]);
   useEffect(() => {
     setData(Data);
-  });
+  }, []);
 
   return (
     <div className="App">
@@ -32,6 +34,7 @@ function App() {
          
         </tbody>
       </table>
+          <Home/>
     </div>
   );
 }
