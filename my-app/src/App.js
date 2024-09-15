@@ -1,42 +1,21 @@
-import React, { useEffect, useState } from "react";
-import { Data } from "./EmployeData";
-import Home from "./components/Home";
-
-
-function App() {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    setData(Data);
-  }, []);
-
+import React from 'react'
+import { Canvas } from '@react-three/fiber'
+import "./style.css"
+import { OrbitControls } from '@react-three/drei'
+import { MeshStandardMaterial } from 'three'
+import * as THREE from "three"
+const App = () => {
   return (
-    <div className="App">
-      <table>
-        <thead>
-          <td>sr.no</td>
-          <td>Id</td>
-          <td>first name</td>
-          <td>last name</td>
-          <td>age</td>
-        </thead>
-        <tbody>
-          {data.map((item, index)=>{
-            return (
-              <tr key={index}>
-                <td>{index+1}</td>
-                <td>{item.firstName}</td>
-                <td>{item.lastName}</td>
-                <td>{item.age}</td>
+   <Canvas>
+    <OrbitControls/>
+    <ambientLight/>
+    <mesh> 
+      <cylinderGeometry args ={[1, 1, 1, 30, 30, true]}/>
+      <meshStandardMaterial side={THREE.DoubleSide}/>
 
-              </tr>
-            )
-          })}
-         
-        </tbody>
-      </table>
-          <Home/>
-    </div>
-  );
+    </mesh>
+   </Canvas>
+  )
 }
 
-export default App;
+export default App
