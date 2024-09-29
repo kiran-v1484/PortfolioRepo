@@ -7,6 +7,7 @@ import {
   EffectComposer,
   ToneMapping,
 } from "@react-three/postprocessing";
+import "../style.css"
 
 const Canvas3d = () => {
   return (
@@ -25,6 +26,7 @@ const Canvas3d = () => {
           <ToneMapping adaptive />
         </EffectComposer>
       </Canvas>
+      <div id="info">Description</div>
     </>
   );
 };
