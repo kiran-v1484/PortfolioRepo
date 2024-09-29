@@ -7,3 +7,99 @@ html,body,#root {
 
     background-color: black;
 }
+#info {
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	text-align: center;
+	z-index: 100;
+	display:block;
+    color: white;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+} */
+
+.container {
+    max-width: 800px;
+	color: white;
+    margin: auto;
+    background: rgb(43, 47, 55);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	margin-top: 100px;
+	display: flex;
+    flex-direction: row;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h3 {
+    text-align: center;
+    
+} 
+h5 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+	width: 50%;
+	margin-right: 20px;
+}
+
+.contact-details {
+	display: flex;
+    flex-direction: column;
+	width: 50%;
+	margin-left: 20px;
+}
+
+label {
+	color: white;
+    margin-bottom: 5px;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+	background-color: rgb(223, 221, 221);
+	color: black;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(99, 102, 241);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(69, 72, 212);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 14px;
+    }
+}
