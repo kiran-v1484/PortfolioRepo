@@ -80,7 +80,7 @@ input {
 	color: black;
 }
 
-button {
+#blue-btn {
     padding: 10px;
     background-color: rgb(99, 102, 241);
     color: white;
@@ -90,7 +90,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+#blue-btn:hover {
     background-color: rgb(69, 72, 212);
 }
 
@@ -102,4 +102,25 @@ button:hover {
     input, button {
         font-size: 14px;
     }
+}
+.resume-div{
+	color: white;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+
+}
+.button-div{
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.social-icon {
+	background-color: rgb(246, 248, 250);
+}
+.social-group {
+	background-color: rgb(43, 47, 55);
 }
