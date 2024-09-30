@@ -115,7 +115,7 @@ const Canvas3d = () => {
           </button>
 
           <button class="w-10 h-10 flex items-center justify-center rounded-lg bg-white shadow-md shadow-gray-600 group transition-all duration-300 social-group">
-          <a rel={'external'} href="https://www.linkedin.com/in/kiran-vethekar-05142a304" target="blank">
+          <a rel={'external'} href="https://www.linkedin.com/in/kiran-sharad-vethekar" target="blank">
             <svg
               class="rounded-md transition-all duration-300 group-hover:scale-110"
               xmlns="http://www.w3.org/2000/svg"
