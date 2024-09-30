@@ -41,6 +41,7 @@ html,body,#root {
 h1 {
     text-align: center;
     margin-bottom: 20px;
+	font-size:xx-large;
 }
 h3 {
     text-align: center;
@@ -63,6 +64,9 @@ h5 {
     flex-direction: column;
 	width: 50%;
 	margin-left: 20px;
+	background-color: antiquewhite;
+	border-radius: 8px;
+	color: black
 }
 
 label {
@@ -123,4 +127,8 @@ input {
 }
 .social-group {
 	background-color: rgb(43, 47, 55);
+}
+#contact-info-heading {
+	margin-bottom: 50px;
+	margin-top: 20px;
 }

@@ -48,9 +48,10 @@ const Contact = () => {
         </form>
 
         <div class="contact-details">
-          <h1>My contact info</h1>
+        
+          <h1 id="contact-info-heading" >My contact info</h1>
           <div>
-            <h3>Name:</h3>
+            <h3 >Name:</h3>
             <h5>Kiran vethekar</h5>
           </div>
           <div>
