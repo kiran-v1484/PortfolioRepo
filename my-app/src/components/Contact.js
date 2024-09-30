@@ -44,7 +44,7 @@ const Contact = () => {
             onChange={handleChange}
           />
 
-          <button type="submit">Submit</button>
+          <button id="blue-btn" type="submit">Submit</button>
         </form>
 
         <div class="contact-details">
